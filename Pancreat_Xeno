@@ -1,0 +1,48 @@
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import MultiLabelBinarizer
+from sklearn.impute import SimpleImputer
+from sklearn.metrics import accuracy_score
+from sklearn.feature_selection import SelectKBest, f_classif
+from sklearn.feature_selection import RFE
+import numpy as np
+import pandas as pd
+
+#读入数据
+train=pd.read_csv("D:/000Archive/ResearchProjects/DNAm_predictor/CancerLocator-v1.0.1/jasminezhoulab-CancerLocator-e5367a2/example/example_train", delimiter='\t', header=None)
+display(train.head())
+test=pd.read_csv("D:/000Archive/ResearchProjects/DNAm_predictor/CancerLocator-v1.0.1/jasminezhoulab-CancerLocator-e5367a2/example/example_test_methy", delimiter='\t', header=None)
+display(test.head())
+refResult=pd.read_csv("D:/000Archive/ResearchProjects/DNAm_predictor/CancerLocator-v1.0.1/jasminezhoulab-CancerLocator-e5367a2/example/reference_result", delimiter='\t')
+display(refResult.head())
+cancerstatus = train[0].unique()
+display(cancerstatus)
+
+# 预处理
+X = train.iloc[:, 1:]  # 特征
+y = train.iloc[:, 0]  # 目标标签
+
+
+imputer = SimpleImputer(strategy='constant',fill_value=0)
+X_imputed = imputer.fit_transform(X)
+
+base_classifier = LogisticRegression(multi_class='ovr')  # 使用 One-vs-Rest 多分类策略
+rfe = RFE(estimator=base_classifier, n_features_to_select=10)  # 选择你希望的特征数量
+model = make_pipeline(rfe, StandardScaler(), base_classifier)
+model.fit(X_imputed, y)
+
+
+#测试
+X_test = imputer.fit_transform(test.iloc[:, 1:])
+X_test_selected = rfe.transform(X_test)
+y_ref = mlb.transform(refResult.iloc[:, 3])
+y_pred = model.predict(X_test_selected)
+
+display(y_ref)
+display(y_pred)
+
+accuracy = accuracy_score(y_ref, y_pred)
+print(f"Accuracy: {accuracy}")
