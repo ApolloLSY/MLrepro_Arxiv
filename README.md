@@ -1,6 +1,6 @@
 # Disease predictor
 
-## No.1 Cancerlocator
+## ~~No.1 Cancerlocator （cell free dna 不是我们要的）~~
 
 [文献](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1191-5?site=n_detail_link#Sec7)
 
@@ -34,6 +34,12 @@
 
 我用线性模型跑了一下和他们的结果差不多 选他们给出的特征的话在我电脑上得到的AUC（0.96）和他们的（0.97）很接近  不过coefficients不太对
 
+## No.4 common traits predictor
+
+
+
+
 # Tissue predictor
+
 
 
