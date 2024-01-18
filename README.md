@@ -1,6 +1,6 @@
 
 
-# Disease predictor
+
 
 # Summary
 
@@ -15,7 +15,7 @@
 
 
 
-
+# Disease predictor
 
 ## pancreatic cancer predictor
 
