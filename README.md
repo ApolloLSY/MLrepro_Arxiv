@@ -135,6 +135,7 @@ linear modeling was performed on the 648 differentially methylated probes identi
 | code   |unpublished   | 
 | data   | [dbGAP] (https://dbgap.ncbi.nlm.nih.gov)  | 
 | model  |Random Forest classification model  |
+
 To reduce the number of DNA methylation loci:
 first, the correlation was calculated between the 472,822 CpG sites and CHD status. CpG sites were retained if the point bi-serial correlation with CHD was at least 0.1. A total of 138,815 CpG sites remained. 
 Subsequently, Pearson correlation between those 138,815 sites was calculated. If the Pearson correlation between two loci was at least 0.8, the loci with a smaller point bi-serial correlation (i.e. less correlated with CHD) was discarded. In the end, 107,799 DNA methylation loci (~23%) remained for model training
