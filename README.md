@@ -33,6 +33,7 @@ Using the above search terms, research papers were selected from 51 and 27 artic
 
 >All data used in this study are available in TCGA Data Portal (https://tcga-data.nci.nih.gov) and GEO (https://www.ncbi.nlm.nih.gov/geo/) with accession numbers of GSE69914, GSE76938, GSE48684, GSE73549, GSE65820, GSE66836, GSE89852, GSE58999 and GSE38240
 
+logistic regression based on the selected seven features was used to construct the tumor-normal diagnostic model. OneVsRestClassifier with estimator of logistic regression was employed to train the tumor specific multiclass classifier. They randomly split the full dataset into training and test sets with 4:1 ratio in both tumor-normal diagnostic model and tissue-specific classifier.
 
 ## prostate cancer predictor
 
@@ -43,6 +44,9 @@ Using the above search terms, research papers were selected from 51 and 27 artic
 | code   | unpublished   | 
 | data   | [GEO public data](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76938)  | 
 | model  | linear mixed model  |
+
+They calculated the methylation beta score as: b = IntensityMethylated/(IntensityMethylated + IntensityUnmethylated) and converted data points that were not significant above background intensity to NAs.  CpGs having greater than 10% missing values prior to normalization were removed. CpGs with a standard deviation of less than 1% across samples were removed. Linear mixed model analysis of the methylation data was performed with patient as a random effect, and age and ethnicity as fixed effects.The p-values were adjusted using the Benjamini and Hochberg method
+
 our AUC（0.96）is similar to their AUC（0.97）
 
 ## common traits predictor
@@ -58,20 +62,28 @@ our AUC（0.96）is similar to their AUC（0.97）
 
 
 
-Through large meta-analysis projects, methylation signals at individual CpG sites have been associated with educational attainment, smoking, alcohol consumption, cholesterol levels, and BMI [5,6,7,8,9,10,11,12,13]. Such studies have also used methylation predictors (from a combination of CpG sites) to predict the phenotype of interest in independent cohorts. For example, 7% of the variance in BMI and 2% of the variance in educational attainment can be explained by their respective predictors [5, 14]. Moreover, DNA methylation has been reported to explain 0.74% and 9.51% of the variation in total and high-density lipoprotein (HDL) cholesterol levels, respectively [11].
->We model the traits of interest as the outcomes and the CpGs as the predictors and train optimized predictors using penalized regression methods. We then apply these predictors to an independent cohort study of approximately 900 individuals to determine: (1) the proportion of variance the DNAm predictors explain in the outcomes; (2) the extent to which these proportions are independent from the contribution of genetics; (3) the accuracy with which the DNAm predictors can identify obese individuals, college-educated individuals, heavy drinkers, high cholesterol levels, and current smokers if provided with a random DNA sample from the population; and (4) the extent to which they can predict health outcomes, such as mortality, and if they do so independently from the phenotypic measure.
 
-Methylation preparation in Generation Scotland:
->Filtering for outliers, sex mismatches, non-blood samples, poorly detected probes, and samples was performed. A full description is provided in Additional file 4. Further filtering was then carried out to remove CpGs with missing values, non-autosomal and non-CpG sites, and any sites not present on the Illumina 450 k array. The latter criterion enabled prediction into the LBC study
+They model the traits of interest as the outcomes and the CpGs as the predictors and train optimized predictors using penalized regression methods, then apply these predictors to approximately 900 individuals to determine: 
+
+(1) the proportion of variance the DNAm predictors explain in the outcomes;
+
+(2) the extent to which these proportions are independent from the contribution of genetics; 
+
+(3) the accuracy with which the DNAm predictors can identify obese individuals, college-educated individuals, heavy drinkers, high cholesterol levels, and current smokers if provided with a random DNA sample from the population; 
+
+(4) the extent to which they can predict health outcomes, such as mortality, and if they do so independently from the phenotypic measure.
+
+Methylation preparation:
+>Filtering for outliers, sex mismatches, non-blood samples, poorly detected probes, and samples was performed(Additional file 4). CpGs with missing values, non-autosomal and non-CpG sites, and any sites not present on the Illumina 450 k array was removed.
 
 LASSO regression in Generation Scotland:
->Penalized regression models were run using the glmnet library in R [31, 32]. Tenfold cross-validation was applied and the mixing parameter (alpha) was set to 1 to apply a LASSO penalty. Coefficients for the model with the lambda value corresponding to the minimum mean cross-validated error were extracted and applied to the corresponding CpGs in an out of sample prediction cohort to create the DNAm predictors.
+>Penalized regression models were run using the glmnet library in R. Tenfold cross-validation was applied and the mixing parameter (alpha) was set to 1 to apply a LASSO penalty. Coefficients for the model with the lambda value corresponding to the minimum mean cross-validated error were extracted and applied to the corresponding CpGs in an out of sample prediction cohort to create the DNAm predictors.
 
 Prediction analysis in the Lothian Birth Cohort 1936:
->Area under the curve (AUC) estimates were estimated for binary categorizations of BMI, smoking, alcohol consumption, college education, and cholesterol variables. Linear regression models were used to identify the proportion of phenotypic variance explained by the corresponding DNAm predictor and to determine whether this was independent of the polygenic (genetic) signal for each phenotype. Ordinal logistic regression was used for the categorical smoking variable (never, ex, current smoker). Age and sex were considered as covariates, the phenotypic measure was the dependent variable, and the polygenic score or DNAm predictor were the independent variables of interest. Incremental R2 estimates were calculated between the null model and the models with the predictors of interest. An additive genetic and epigenetic model for BMI in the LBC1936 has been reported previously, although a different DNAm predictor, based on unrelated individuals, was derived from the GS data [44]. ROC curves were developed for smoking status, obesity, high/low alcohol consumption, college education and cholesterol variables, and AUC estimates were estimated for binary categorizations of these variables using the pROC library in R [45]. Cox proportional hazards survival models [46] were used to examine whether the phenotype, polygenic score, or DNAm predictor explained mortality risk and if they do so independently of one another. Sex was included as a covariate in all models. Correction for multiple testing was applied using the Bonferroni method.
+>Area under the curve (AUC) estimates were estimated for binary categorizations of traits. Ordinal logistic regression was used for the categorical smoking variable (never, ex, current smoker). ROC curves were developed for smoking status, obesity, high/low alcohol consumption, college education and cholesterol variables, and AUC estimates were estimated for binary categorizations of these variables using the pROC library in R.Sex was included as a covariate in all models. Correction for multiple testing was applied using the Bonferroni method.
 
 DNAm predictors classify phenotype extremes
->there were 652 controls and 242 cases for obesity, 745 light-to-moderate drinkers and 150 heavy drinkers, 418 non-smokers and 102 current smokers, and 229 and 666 individuals with > 11 and ≤ 11 years of full-time education, respectively. Following dichotomization of the cholesterol-related variables, there were 531 and 354 individuals with high and low total cholesterol, respectively; 89 and 723 individuals with high and low HDL cholesterol, respectively; 637 and 175 individuals with high and low LDL with remnant cholesterol, respectively; and 307 and 502 with high and low total:HDL cholesterol ratios, respectively.
+>652 controls and 242 cases for obesity, 745 light-to-moderate drinkers and 150 heavy drinkers, 418 non-smokers and 102 current smokers, 229 and 666 individuals with > 11 and ≤ 11 years of full-time education, 531 and 354 individuals with high and low total cholesterol,  89 and 723 individuals with high and low HDL cholesterol,  637 and 175 individuals with high and low LDL with remnant cholesterol, 307 and 502 with high and low total:HDL cholesterol ratios.
 
 Results for comparison:
 
@@ -97,7 +109,8 @@ Results for comparison:
 | data   | GSE50759  | 
 | model  |stochastic gradient boosting  |
 
-
+filter:(1) probes on X and Y chromosomes (n = 11,648), (2) SNP probes (n = 65), (3) probes with bead count < 3 in 10% of samples (n = 726), (4) probes with 10% of samples with a detection p value > 0.01 (n = 11,864), and (5) probes with a polymorphic CpG and non-specific probes (N = 19,337 SNP-CpG and 10,484 non-specific probes)
+linear modeling was performed on the 648 differentially methylated probes identified in the initial NDN study and found in the present dataset using the limma package in R and a model that included clinical status and all identified SVs as covariates.Benjamini-Hochberg method was used.
 
 
 
