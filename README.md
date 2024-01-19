@@ -140,4 +140,5 @@ linear modeling was performed on the 648 differentially methylated probes identi
 
 normalization:
 >HumanMethylation450 array, we used the pipeline developed by Touleimat and Tost (21). Individual data points with detection P > 0.01 or number of beads <3 were treated as missing data. Samples with >20% missing probes were treated as missing data. 
-
+linear model was developed.
+SVM model is constructed in a similar manner as the linear regression method. For a given CpG site j, we used xij and yij as the training data set to build an SVM model.[their R package](http://www.hsph.harvard.edu/liming-liang/cross-tissue-methylation/).
