@@ -14,8 +14,21 @@ Using the above search terms, research papers were selected from 51 and 27 artic
 | [Epigenetic prediction of complex traits and death](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1514-1) | Common Traits Predictor         | Daniel L. McCartney | 2018 | 96|Unpublished                                        | Generation Scotland (Need approval from GS Access Committee) | Logistic Regression       |
 | [DNA methylation as a predictor of fetal alcohol spectrum disorder](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-018-0439-6) | Predictor of Fetal Alcohol Spectrum Disorder | Alexandre A. Lussier | 2018 |37| Unpublished                                        | GSE50759                                       | Stochastic Gradient Boosting |
 | [Integrated genetic and epigenetic prediction of coronary heart disease in the Framingham Heart Study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190549#sec002)   | predictor of coronary heart disease  | Meeshanthini V. Dogan  | 2018 |75| unpublished                                          | [dbGAP](https://dbgap.ncbi.nlm.nih.gov)          | Random Forest classification model  |
+| [An epigenome-wide association study of metabolic syndrome and its components](https://www.nature.com/articles/s41598-020-77506-z#Abs1) | Predictor of metabolic syndrome  | Marja-Liisa Nuotio (2020) | 2020 | 25 | Unpublished                                          | NFBC1966 (needing request and permission from THL Biobank and University of Oulu) | Random Forest classification model  |
+| [Epigenome-Wide Association Study of Incident Type 2 Diabetes in a British Population: EPIC-Norfolk Study](https://diabetesjournals.org/diabetes/article/68/12/2315/39835/Epigenome-Wide-Association-Study-of-Incident-Type) | Predictor of Type 2 diabetes  | Alexia Cardona (2019) | 2019 | 44 | Unpublished                                          | EPIC-Norfolk (needing request and permission)  | Logistic regression model  |
+| [Epigenomic Assessment of Cardiovascular Disease Risk and Interactions With Traditional Risk Metrics](https://www.ahajournals.org/doi/10.1161/JAHA.119.015299) | Cardiovascular Disease predictor  | Kenneth Westerman (2020) | 2020 | 21 | [GitHub](https://github.com/kwest​erman/​meth_cvd)  | LBC 1936  | Study-specific regression models: CSL cross-study learner  |
+| [Identification of potential blood biomarkers for Parkinson’s disease by gene expression and DNA methylation data integration analysis](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-019-0621-5) | Parkinson Disease predictor  | Changliang Wang (2020) | 2020 | 37 | Unpublished                                          | [DNA methylation data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111629 )  | Linear model  |
+| [Multi-task deep autoencoder to predict Alzheimer’s disease progression using temporal DNA methylation data in peripheral blood](https://www.sciencedirect.com/science/article/pii/S2001037022004639?via%3Dihub#s0010) | Alzheimer’s disease predictor  | Li Chen (2022) | 2022 | 2 | [Published](https://github.com/lichen-lab/MTAE)  | ADNI public data  | Unsupervised dimensionality reduction model  |
+| [Artificial intelligence and leukocyte epigenomics: Evaluation and prediction of late-onset Alzheimer’s disease](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248375) | Another Alzheimer’s disease predictor  | Ray O. Bahado-Singh (2021) | 2021 | 19 | Unpublished                                          | Unpublished  | DL model  |
+| [Epigenome-wide analyses identify DNA methylation signatures of dementia risk](https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/dad2.12078) | Dementia predictor  | Rosie M. Walker | 2020 | 3 | Unpublished                                          | Unpublished  | Linear regression model |
+| [A panel of DNA methylation signature from peripheral blood may predict colorectal cancer susceptibility](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-020-07194-5#Sec2) | Colorectal Cancer predictor  | Justina Ucheojor Onwuka | 2020 | 11 | Unpublished                                          | GSE51032  | Stepwise logistic regression |
+| [DNA methylation age of blood predicts future onset of lung cancer in the women's health initiative](https://www.aging-us.com/article/100809/text) | Female Lung Cancer predictor  | Morgan E. Levine | 2015 | 11 | Unpublished                                          | Women's Health Initiative  | Logistic regression models and ran Cox models |
+| [Individual and joint performance of DNA methylation profiles, genetic risk score and environmental risk scores for predicting breast cancer risk](https://febs.onlinelibrary.wiley.com/doi/10.1002/1878-0261.12594) | Breast Cancer predictor  | Zhong Guan | 2019 | 9 | Unpublished                                          | Unpublished  | Multivariable logistic regression |
+| [Epigenome-Wide Association Study Indicates Hypomethylation of MTRNR2L8 in Large-Artery Atherosclerosis Stroke](https://www.ahajournals.org/doi/10.1161/STROKEAHA.118.023436) | Atherosclerosis Stroke predictor  | Yupei Shen | 2019 | 27 | Unpublished                                          | Unpublished  | Linear regression |
+| [Deep Learning/Artificial Intelligence and Blood-Based DNA Epigenomic Prediction of Cerebral Palsy](https://www.mdpi.com/1422-0067/20/9/2075) | Cerebral Palsy predictor  | Ray O. Bahado-Singh | 2019 | 15 | Unpublished                                          | Unpublished  | Univariate logistic regression |
+| [Epigenetic Signatures of Cigarette Smoking](https://www.ahajournals.org/doi/10.1161/CIRCGENETICS.116.001506) | Smoking Habits Examination  | Roby Joehanes | 2016 | 508 | Unpublished                                          | 16 cohorts of the Cohorts for Heart and Aging Research in Genetic Epidemiology Consortium  | Linear regression |
 | [CancerLocator](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1191-5?site=n_detail_link) | Multiple Cancer Predictor        | Shuli Kang       | 2017 |168| [GitHub - JAVA](https://github.com/jasminezhoulab/CancerLocator/tree/v1.0.1) | Simulated data generated by themselves          | Probability Model         |
-| [tissue predictor](https://doi.org/10.1093/nar/gkt1380) | tissue predictor    |Baoshan Ma|2014     |   2014 |101| [unpublished | ECACC](http://www.hpacultures.org.uk/collections/ecacc.jsp)   | Linear prediction model&Support vector machine&Cross-validation        |
+| [tissue predictor](https://doi.org/10.1093/nar/gkt1380) | tissue predictor    |Baoshan Ma    |   2014 |101| unpublished | [ECACC](http://www.hpacultures.org.uk/collections/ecacc.jsp)   | Linear prediction model&Support vector machine&Cross-validation        |
 
 
 
@@ -127,7 +140,7 @@ first, the correlation was calculated between the 472,822 CpG sites and CHD stat
 Subsequently, Pearson correlation between those 138,815 sites was calculated. If the Pearson correlation between two loci was at least 0.8, the loci with a smaller point bi-serial correlation (i.e. less correlated with CHD) was discarded. In the end, 107,799 DNA methylation loci (~23%) remained for model training
  A grid search using GridSearchCV was employed to perform 10-fold cross-validation hyper-parameter tuning (maximum features: auto, minimum samples for each split: 2–10, information gain criterion: entropy or gini, maximum tree depth: 500–2500, number of trees: 10000–30000) of the models.All eight final tuned models were saved for testing on the test dataset where majority voting was used to ensemble the votes of these models.
 
- ## coronary heart disease predictor
+ ## metabolic syndrome predictor
 
 | Tags                                      | Content   |
 |--------------------------------------------|-------|
@@ -185,7 +198,7 @@ using regression analysis fitting generalised linear models.Analyses were adjust
 | data   | ADNI public data  | 
 | model  | unsupervised dimensionality reduction model  |
 
- ## Alzheimer’s disease predictor
+ ## another Alzheimer’s disease predictor
 
 | Tags                                      | Content   |
 |--------------------------------------------|-------|
@@ -218,16 +231,16 @@ using regression analysis fitting generalised linear models.Analyses were adjust
 | data   | GSE51032  | 
 | model  | stepwise logistic regression |
 
- ## colorectal cancer predictor
+ ## female lung cancer predictor
 
 | Tags                                      | Content   |
 |--------------------------------------------|-------|
-| function   |colorectal cancer predictor | 
-| source   | [A panel of DNA methylation signature from peripheral blood may predict colorectal cancer susceptibility](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-020-07194-5#Sec2)Justina Ucheojor Onwuka（2020）| 
+| function   |female lung cancer | 
+| source   | [DNA methylation age of blood predicts future onset of lung cancer in the women's health initiative](https://www.aging-us.com/article/100809/text)Morgan E. Levine（2015）| 
 |citations|11|
 | code   |unpublished | 
-| data   | GSE51032  | 
-| model  | stepwise logistic regression |
+| data   |Women's Health Initiative | 
+| model  | logistic regression models and ran Cox models |
 
  ## breast cancer predictor
 
@@ -274,7 +287,7 @@ using regression analysis fitting generalised linear models.Analyses were adjust
 | data   |16 cohorts of the Cohorts for Heart and Aging Research in Genetic Epidemiology Consortium  | 
 | model  |linear regression |
 
-Epigenetic Signatures of Cigarette Smoking
+
 
 ## ~~Cancerlocator （cell free dna）~~
 
