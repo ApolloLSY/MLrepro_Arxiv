@@ -319,6 +319,8 @@ normalization:
 linear model was developed.
 SVM model is constructed in a similar manner as the linear regression method. For a given CpG site j, we used xij and yij as the training data set to build an SVM model.[their R package](http://www.hsph.harvard.edu/liming-liang/cross-tissue-methylation/).
 
+They did not disclose their training data, but they used publicly available GSE data as test data and provided model performance parameters. Therefore, I am currently training on our EWAS data and will also try the GSE public data they used
+>In the independent data set of six individuals and 24 LCL T cell pairs, the correlation R2 between predicted value and T cell methylation was 0.95 for both SVM and LM models (average across 144 LCL-T cell pairs) compared with 0.92 for LCL-T cell correlation (Supplementary Figure S17). After removing CpG sites with minimum methylation β values > 0.9 or maximum β values < 0.1 among all subjects in both LCL and T cells, our prediction model increased the overall R2 from 0.88 to 0.92. When the cut-points for minimum and maximum β values were changed to 0.8 and 0.2, respectively, the overall correlation R2 increased from 0.80 to 0.87. The magnitude of improvement was smaller than the cross-validation estimate in our 39 samples (Supplementary Figure S17). This is likely because the target tissue in the training data set is PBLs, whereas the target tissue in testing data set is T cells. The significant improvement, especially for LCL-T cell pairs with lower correlation (Supplementary Figure S17), suggests that the prediction model built in a training data set is applicable to future studies and improves the utility of surrogate tissues.
 
 # Project Progress and Plan
 
