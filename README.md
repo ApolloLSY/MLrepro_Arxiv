@@ -188,7 +188,7 @@ using regression analysis fitting generalised linear models.Analyses were adjust
 | model  | linear model  |
 
 
- ## Alzheimer’s disease predictor
+ ## ~~Alzheimer’s disease predictor~~
 
 | Tags                                      | Content   |
 |--------------------------------------------|-------|
@@ -198,6 +198,9 @@ using regression analysis fitting generalised linear models.Analyses were adjust
 | code   |[published](https://github.com/lichen-lab/MTAE)   | 
 | data   | ADNI public data  | 
 | model  | unsupervised dimensionality reduction model  |
+
+They observe three types of AD diagnosis: cognitive normal (CN), mild cognitive impairment (MCI) and dementia (AD).But they didn't use baseline data to predict disease outcomes; instead, they used four-year, four-timepoint longitudinal data to predict four outcomes: CN-to-CN (n = 147), CN-to-MCI (n = 44), MCI-to-MCI (n = 147), and MCI-to-AD (n = 111).
+Maybe not suitable for our research.
 
  ## another Alzheimer’s disease predictor
 
