@@ -1,11 +1,6 @@
 
 # Summary
 
-![image](https://github.com/ApolloLSY/MLrepro_Arxiv/assets/78656349/5fda8fde-16e8-4945-904f-8bb9af493e02)
-
-![image](https://github.com/ApolloLSY/MLrepro_Arxiv/assets/78656349/18ea2dbd-7b5a-40cd-9626-fcbc50c51587)
-
-Using the above search terms, research papers were selected from 51 and 27 articles with citation counts exceeding 35 and utilizing 5mc Array. Subsequently, reproduction will be conducted.
 
 |number| Article                                      | Function            | Author                  | Year     | Citations| Code                                               | Data                                          | Model                     |
 |----------------------------------------------|----------------------------------------------|-----------------------------------|-----------------|------|--|----------------------------------------------------|------------------------------------------------|---------------------------|
@@ -19,7 +14,7 @@ Using the above search terms, research papers were selected from 51 and 27 artic
 | [Epigenetic Signatures of Cigarette Smoking](https://www.ahajournals.org/doi/10.1161/CIRCGENETICS.116.001506) | Smoking Habits Examination  | Roby Joehanes | 2016 | 508 | Unpublished                                          | 16 cohorts of the Cohorts for Heart and Aging Research in Genetic Epidemiology Consortium  | Linear regression |
 | [EWAS of Cardiovascular Disease Risk and Interactions](https://www.ahajournals.org/doi/10.1161/JAHA.119.015299) | Cardiovascular Disease predictor  | Kenneth Westerman (2020) | 2020 | 21 | [GitHub](https://github.com/kwest​erman/​meth_cvd)  | LBC 1936  | Study-specific regression models: CSL cross-study learner  |
 | [potential blood biomarkers for Parkinson’s disease](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-019-0621-5) | Parkinson Disease predictor  | Changliang Wang (2020) | 2020 | 37 | Unpublished                                          | [DNA methylation data](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111629 )  | Linear model  |
-| [predict Alzheimer’s disease progression using temporal DNA methylation data in peripheral blood](https://www.sciencedirect.com/science/article/pii/S2001037022004639?via%3Dihub#s0010) | Alzheimer’s disease predictor  | Li Chen (2022) | 2022 | 2 | [Published](https://github.com/lichen-lab/MTAE)  | ADNI public data  | Unsupervised dimensionality reduction model  |
+| ~~[predict Alzheimer’s disease progression using temporal DNA methylation data in peripheral blood](https://www.sciencedirect.com/science/article/pii/S2001037022004639?via%3Dihub#s0010)~~ | Alzheimer’s disease predictor  | Li Chen (2022) | 2022 | 2 | [Published](https://github.com/lichen-lab/MTAE)  | ADNI public data  | Unsupervised dimensionality reduction model  |
 | [Evaluation and prediction of late-onset Alzheimer’s disease](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0248375) | Another Alzheimer’s disease predictor  | Ray O. Bahado-Singh (2021) | 2021 | 19 | Unpublished                                          | Unpublished  | DL model  |
 | [DNA methylation signature predict colorectal cancer susceptibility](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-020-07194-5#Sec2) | Colorectal Cancer predictor  | Justina Ucheojor Onwuka | 2020 | 11 | Unpublished                                          | GSE51032  | Stepwise logistic regression |
 | [DNA methylation age of blood predicts future onset of lung cancer in the women's health initiative](https://www.aging-us.com/article/100809/text) | Female Lung Cancer predictor  | Morgan E. Levine | 2015 | 11 | Unpublished                                          | Women's Health Initiative  | Logistic regression models and ran Cox models |
@@ -27,7 +22,7 @@ Using the above search terms, research papers were selected from 51 and 27 artic
 | [EWAS Indicates Hypomethylation of MTRNR2L8 in Large-Artery Atherosclerosis Stroke](https://www.ahajournals.org/doi/10.1161/STROKEAHA.118.023436) | Atherosclerosis Stroke predictor  | Yupei Shen | 2019 | 27 | Unpublished                                          | Unpublished  | Linear regression |
 | [DNA Epigenomic Prediction of Cerebral Palsy](https://www.mdpi.com/1422-0067/20/9/2075) | Cerebral Palsy predictor  | Ray O. Bahado-Singh | 2019 | 15 | Unpublished                                          | Unpublished  | Univariate logistic regression |
 | [DNA methylation signatures of dementia risk](https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/dad2.12078) | Dementia predictor  | Rosie M. Walker | 2020 | 3 | Unpublished                                          | Unpublished  | Linear regression model |
-| [CancerLocator](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1191-5?site=n_detail_link) | Multiple Cancer Predictor        | Shuli Kang       | 2017 |168| [GitHub - JAVA](https://github.com/jasminezhoulab/CancerLocator/tree/v1.0.1) | Simulated data generated by themselves          | Probability Model         |
+| ~~[CancerLocator](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1191-5?site=n_detail_link)~~ | Multiple Cancer Predictor        | Shuli Kang       | 2017 |168| [GitHub - JAVA](https://github.com/jasminezhoulab/CancerLocator/tree/v1.0.1) | Simulated data generated by themselves          | Probability Model         |
 | [tissue predictor](https://doi.org/10.1093/nar/gkt1380) | tissue predictor    |Baoshan Ma    |   2014 |101| unpublished | [ECACC](http://www.hpacultures.org.uk/collections/ecacc.jsp)   | Linear prediction model&Support vector machine&Cross-validation        |
 
 
