@@ -17,3 +17,8 @@ python main.py --datafile GsE76938 matrix processed.txt
 ```
 
 ![0e83f2d56f2f75e476b4870526bf08c](https://github.com/ApolloLSY/MLrepro_Arxiv/assets/78656349/4f8dc010-fc08-4a29-9d35-eda0210c53fc)
+
+
+
+------------
+Note: The data file is ```GSE76938_matrix_processed.txt```, sourced from the [GEO website](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76938).
