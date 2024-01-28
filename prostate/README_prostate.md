@@ -1,4 +1,4 @@
-Download the ```workfile```:
+Download the ```workfile.zip```and unzip it:
 
 ```
 python main.py -h
