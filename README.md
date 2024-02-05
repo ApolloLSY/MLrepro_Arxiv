@@ -55,7 +55,10 @@ logistic regression based on the selected seven features was used to construct t
 | code   | unpublished   | 
 | data   | unpublished  | 
 | model  | logistic regression  |
-
+>For all datasets, missing feature values were substituted by the overall feature median.
+>In all lists, correlated features were removed by applying a threshold on the calculated Pearson’s correlation coefficients. For DNA-methylation, a threshold of 0.9 was used
+>10 equal folds  random-forest models
+>accuracy, sensitivity, specificity and the area under the curve (AUC) were calculated.For final model scores, the metrics were averaged across all folds
 
 
 ## prostate cancer predictor
