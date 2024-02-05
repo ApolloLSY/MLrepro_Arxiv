@@ -59,7 +59,13 @@ logistic regression based on the selected seven features was used to construct t
 >In all lists, correlated features were removed by applying a threshold on the calculated Pearson’s correlation coefficients. For DNA-methylation, a threshold of 0.9 was used
 >10 equal folds  random-forest models
 >accuracy, sensitivity, specificity and the area under the curve (AUC) were calculated.For final model scores, the metrics were averaged across all folds
-
+>The trained models for the differentiation of PDAC and N exhibited cross-validated AUCs between 0.85 and 0.98, when features of the respective dataset were added consecutively (figure 3A). A predictive model based on DNA-methylation showed the highest AUC value—0.980—with the lowest number of features, namely cg02964172 (gene GCNT2, gene body) and cg17184704 (intergenic, chr. 10: 11727286). The next best models were trained on combined DNA-methylation and mRNA data (AUC of 0.977, 5 features), the miRNA and mRNA data (AUC of 0.955, 4 features), the miRNA data (AUC of 0.980, 12 features) and the mRNA data (AUC of 0.946, 14 features)
+>For the classification of PDAC and CP, we employed the established machine-learning workflow. The five different ‘omic’ datasets were used to construct predictive models. A model consisting of four DNA-methylation features—cg15506157 (killer cell lectin like receptor G2 (KLRG2), TSS200 (0–200 bases upstream of transcription start site)), cg03306374 (PRKCB, first exon/5’-untranslated region (UTR)), cg21294301 (intergenic, chr. 1: 8120055) and cg27341866 (C19orf35, gene body)
+>Therefore, we selected five DNA-methylation biomarkers with high performance from these two models for independent validation: cg03306374 (in gene PRKCB), cg05795005 (LIN7C), cg11792281 (NLK), cg15506157 (KLRG2) and cg27341866 (C19orf35) (online supplemental figure S7A). They exhibited the lowest p values and SD in differential PDAC versus CP analysis. Unsupervised hierarchical clustering revealed that the five markers separated PDAC from CP accurately (figure 4B).
+>[03306374, 05795005, 11792281, 15506157, 27341866] 差异 PDAC 与 CP 分析中，它们表现出最低的 p 值和 SD 
+[03306374 ,15506157,21294301,27341866] 区分 PDAC 和 CP 的最准确的值 AUC 值为 1.00
+03306374 (PRKCB) 和 cg15506157  分别为 0.695 和 0.838（图 4D）。两种甲基化标记的组合模型以 0.905 
+cg03156893、cg03217795、cg05436658、cg09507526、cg21370856）以及cg15506157和KLRG2中的三个高度相关的CpG（cg00699934）组合起来。 、cg00919016、cg05224190)  1.0
 
 ## prostate cancer predictor
 
