@@ -252,6 +252,12 @@ Maybe not suitable for our research.
 | code   |unpublished | 
 | data   | GSE51032  | 
 | model  | stepwise logistic regression |
+>extracted the data containing the DNA methylation status of 485,512 CpG sites in the 166 participants who had developed primary colorectal cancer and the 424 matched cancer-free participants.
+>normalization
+>probes with detection P-value > 0.01 in at least one sample were filtered out
+>Differentially methylated markers associated with CRC risk were screened on the training dataset using LASSO selection and stepwise logistic regression analysis. sixteen-CpG panel overlapping between the two methods were selected to calculate a methylation risk score (MRS)
+>The MRS (range, − 5.59 to 4.35) was significantly higher for CRC subjects than in healthy normal subjects (P <  0.000), with a median MRS of 1.68 (IQR, 1.43) in CRC subjects and − 0.430 (IQR, 2.89) in healthy normal subjects. The MRS was associated with a 2.68-fold increased risk of CRC (OR = 2.68, 95% CI: 2.13, 3.38, P <  0.0001). The MRS showed a good predictive ability for discriminating between CRC and healthy normal subjects (AUC, 0.85; 95% CI: 0.81, 0.89).
+>Similar to the training dataset, the MRS showed a good predictive ability for discriminating between CRC and healthy normal subjects (AUC, 0.82; 95% C: 0.76, 0.88) .
 
  ## female lung cancer predictor
 
