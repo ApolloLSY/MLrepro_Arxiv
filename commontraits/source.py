@@ -1,5 +1,3 @@
-# %%
-! pip install statsmodels
 
 
 # %%
@@ -44,32 +42,8 @@ nan_rows = result_df[result_df['disease'].isna()]
 num_nan_rows = nan_rows.shape[0]
 print(" 'disease' 列中有", num_nan_rows, "行的值是 NaN。")
 
-
-# %%
-'''
-result_df = result_df.dropna(subset=['disease'])
-print(result_df['disease'].unique())
-num_rows = result_df.shape[0]
-print("数据框有", num_rows, "行。")
-'''
-
 # %%
 result_df.head()
-
-# %%
-#df2 = pd.read_csv("/data/Clockbase/Methylation/disease/GSE43414.csv.gz",compression='gzip')  
-#df2.head()
-
-
-# %%
-#df2t=df2.transpose()
-#df2t.head()
-
-# %%
-#print(df2t.index)
-
-# %%
-
 
 # %%
 pd.set_option('display.max_rows', 100)
