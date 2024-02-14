@@ -4,7 +4,7 @@
 
 |number| Article                                      | Function            | Author          &         Year     | Citations| Code                                               | Data                                          | Model                     |
 |----------------------------------------------|---------------------------------------------------------------------------------|-----------------|------|--|----------------------------------------------------|------------------------------------------------|---------------------------|
-|1| [DNAm biomarkers for pan-cancer diagnosis](https://www.tandfonline.com/doi/full/10.1080/15592294.2019.1568178?scroll=top&needAccess=true) | Cancer Predictor     | Wubin DingCenter   2019 |71| Unpublished                                        | Unpublished                                    | OneVsAll       |
+|1| ~~[DNAm biomarkers for pan-cancer diagnosis](https://www.tandfonline.com/doi/full/10.1080/15592294.2019.1568178?scroll=top&needAccess=true)~~ | Cancer Predictor     | Wubin DingCenter   2019 |71| Unpublished                                        | Unpublished                                    | OneVsAll       |
 |2| [DNAm signature differentiates pancreatic cancer from chronic pancreatitis](https://gut.bmj.com/content/72/12/2344) | Pancreatic Cancer Predictor     | Yenan Wu   2019 |11| Unpublished                                        | [arrayexpress](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-3855?query=E-MTAB-3855)                                    | random-forest machine-learning approach       |
 |3| [DNA methylation measurements in prostate tissues](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3252-2) | Prostate Cancer Predictor       | Marie K. Kirby    2017 |39| Unpublished                                        | [GEO Public Data](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76938) | Linear Mixed Model         |
 |4| [Epigenetic prediction of complex traits and death](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1514-1) | Common Traits Predictor         | Daniel L. McCartney  2018 | 96|Unpublished                                        | Generation Scotland (Need approval from GS Access Committee) | Logistic Regression       |
@@ -36,14 +36,14 @@
 | Tags                                      | Content   |
 |--------------------------------------------|-------|
 | function   | pancreatic cancer predictor  | 
-|  source  | [Integrative analysis identifies potential DNA methylation biomarkers for pan-cancer diagnosis and prognosis](https://www.tandfonline.com/doi/full/10.1080/15592294.2019.1568178?scroll=top&needAccess=true)  Wubin DingCenter(2019) | 
+|  source  | ~~[Integrative analysis identifies potential DNA methylation biomarkers for pan-cancer diagnosis and prognosis](https://www.tandfonline.com/doi/full/10.1080/15592294.2019.1568178?scroll=top&needAccess=true)~~  Wubin DingCenter(2019) | 
 | code   | unpublished   | 
 | data   | unpublished  | 
 | model  | logistic regression  |
 
->All data used in this study are available in TCGA Data Portal (https://tcga-data.nci.nih.gov) and GEO (https://www.ncbi.nlm.nih.gov/geo/) with accession numbers of GSE69914, GSE76938, GSE48684, GSE73549, GSE65820, GSE66836, GSE89852, GSE58999 and GSE38240
-
 logistic regression based on the selected seven features was used to construct the tumor-normal diagnostic model. OneVsRestClassifier with estimator of logistic regression was employed to train the tumor specific multiclass classifier. They randomly split the full dataset into training and test sets with 4:1 ratio in both tumor-normal diagnostic model and tissue-specific classifier.
+
+This paper is dismissed for lack of suitable test dataset (They use OneVsAll methods that incorporate all the disease together, and it is for us to find a single test dataset that includes so many diseases.)
 
 ## pancreatic cancer predictor
 
@@ -91,7 +91,7 @@ our AUC（0.96）is similar to their AUC（0.97）
 | data   | Generation Scotland（need approval from GS Access Committee）  | 
 | model  | LASSO regression&linear mixed model  |
 
-
+check if GSE69914, GSE76938, GSE48684, GSE73549, GSE65820, GSE66836, GSE89852, GSE58999 and GSE38240 is usable
 
 
 
