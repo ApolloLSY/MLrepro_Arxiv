@@ -30,7 +30,9 @@
 
 # Disease predictor
 
-## cancer predictor
+## ~~18 cancer predictor~~
+
+**This paper is dismissed for lack of suitable test dataset (They use OneVsAll methods that incorporate all the disease together, and it is for us to find a single test dataset that includes so many diseases.**
 
 
 | Tags                                      | Content   |
@@ -43,7 +45,7 @@
 
 logistic regression based on the selected seven features was used to construct the tumor-normal diagnostic model. OneVsRestClassifier with estimator of logistic regression was employed to train the tumor specific multiclass classifier. They randomly split the full dataset into training and test sets with 4:1 ratio in both tumor-normal diagnostic model and tissue-specific classifier.
 
-This paper is dismissed for lack of suitable test dataset (They use OneVsAll methods that incorporate all the disease together, and it is for us to find a single test dataset that includes so many diseases.)
+
 
 ## pancreatic cancer predictor
 
@@ -208,6 +210,9 @@ using regression analysis fitting generalised linear models.Analyses were adjust
 
  ## ~~Alzheimer’s disease predictor~~
 
+**They observe three types of AD diagnosis: cognitive normal (CN), mild cognitive impairment (MCI) and dementia (AD).But they didn't use baseline data to predict disease outcomes; instead, they used four-year, four-timepoint longitudinal data to predict four outcomes: CN-to-CN (n = 147), CN-to-MCI (n = 44), MCI-to-MCI (n = 147), and MCI-to-AD (n = 111).
+Maybe not suitable for our research.**
+
 | Tags                                      | Content   |
 |--------------------------------------------|-------|
 | function   |Alzheimer’s diseasepredictor | 
@@ -217,8 +222,7 @@ using regression analysis fitting generalised linear models.Analyses were adjust
 | data   | ADNI public data  | 
 | model  | unsupervised dimensionality reduction model  |
 
-They observe three types of AD diagnosis: cognitive normal (CN), mild cognitive impairment (MCI) and dementia (AD).But they didn't use baseline data to predict disease outcomes; instead, they used four-year, four-timepoint longitudinal data to predict four outcomes: CN-to-CN (n = 147), CN-to-MCI (n = 44), MCI-to-MCI (n = 147), and MCI-to-AD (n = 111).
-Maybe not suitable for our research.
+
 
  ## another Alzheimer’s disease predictor
 
@@ -317,7 +321,9 @@ Maybe not suitable for our research.
 
 
 
-## ~~Cancerlocator （cell free dna）~~
+## ~~Cancerlocator ~~
+
+**cell free dna data is not suitable for our project**
 
 | Tags                                      | Content   |
 |--------------------------------------------|-------|
