@@ -1,7 +1,7 @@
 | Disease | Used Datasets | Validation Datasets |
 |---------|--------------|--------------|
-| Alzheimer's disease | GSE43414, GSE59685, GSE72778, GSE66351, GSE80970, GSE79144, GSE53740 |  [GSE208623](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE208623)|
-| Asthma | GSE85566, GSE104471, GSE52074, GSE56553 |
+| Alzheimer's disease | GSE43414, GSE59685, GSE72778, GSE66351, GSE80970, GSE79144, GSE53740 |  [GSE208623](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE208623) [GSE153712](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE153712)|
+| Asthma | GSE85566, GSE104471, GSE52074, GSE56553 |[GSE109446](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109446)|
 | Autism spectrum disorder | GSE50759 |
 | Childhood asthma | GSE65163, GSE104087, GSE109446, GSE40576 |
 | Crohn's disease | GSE87640, GSE87648, GSE32148 |
@@ -13,7 +13,7 @@
 | Multiple sclerosis | GSE40360, GSE106648, GSE88824, GSE43976 |
 | Nephrogenic rest | GSE59157 |
 | Panic disorder | GSE102468 |
-| Parkinson's disease | GSE57360, GSE111223, GSE111629, GSE72774, GSE72776 |
+| Parkinson's disease | GSE57360, GSE111223, GSE111629, GSE72774, GSE72776 |[GSE195834](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE195834)|
 | Preeclampsia | GSE44667, GSE100197, GSE103253, GSE57767, GSE73375, GSE75196 |
 | Psoriasis | GSE63315, GSE73894, GSE115797 |
 | Respiratory allergy | GSE110128, GSE73745 |
