@@ -22,11 +22,12 @@
 | Silver Russell syndrome | GSE55491, GSE104451 |only one 850k array[GSE237503](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237503)|
 | Sjogren's syndrome | GSE75679 |
 | Spina bifida | GSE69502 |[GSE81846](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81846)|
-| Stroke | GSE66500, GSE69138 |
+| Stroke | GSE66500, GSE69138 |[GSE203399](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203399)|
 | Systemic insulin resistance | GSE76394, GSE76285, GSE76398 |
-| Systemic lupus erythematosus | GSE59250, GSE110607, GSE80553 |
-| Systemic sclerosis | GSE117929 |
-| Type 2 diabetes | GSE58280, GSE62003 |
-| Ulcerative colitis | GSE87640, GSE87648, GSE32148 |
+| Systemic lupus erythematosus | GSE59250, GSE110607, GSE80553 |[GSE76056](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76056)|
+| Systemic sclerosis | GSE117929 |no 450k, only HiSeq 2500 and methylation EPIC|
+| Type 2 diabetes | GSE58280, GSE62003 |[GSE166652](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE166652)|
+| Ulcerative colitis | GSE87640, GSE87648, GSE32148 |[GSE81211](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81211)|
 
+All diseases have been searched through once. The empty ones are those for which datasets have not been found yet, or have been found but their usability is uncertain.
 
