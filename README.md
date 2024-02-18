@@ -76,7 +76,7 @@ Their other focus are distinguishing between pancreatic cancer and pancreatitis,
 | function   | prostate cancer predictor  | 
 |  source  | [Genome-wide DNA methylation measurements in prostate tissues uncovers novel prostate cancer diagnostic biomarkers and transcription factor binding patterns](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3252-2)  Marie K. Kirby(2017) | 
 | code   | unpublished   | 
-| data   | [GEO public data](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76938)  | 
+| data   | [GSE76938](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76938)  | 
 | model  | linear mixed model  |
 
 They calculated the methylation beta score as: b = IntensityMethylated/(IntensityMethylated + IntensityUnmethylated) and converted data points that were not significant above background intensity to NAs.  CpGs having greater than 10% missing values prior to normalization were removed. CpGs with a standard deviation of less than 1% across samples were removed. Linear mixed model analysis of the methylation data was performed with patient as a random effect, and age and ethnicity as fixed effects.The p-values were adjusted using the Benjamini and Hochberg method
