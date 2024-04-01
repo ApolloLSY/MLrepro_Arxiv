@@ -1,0 +1,6 @@
+,auc,accuracy
+train,1.0,1.0
+,auc,accuracy
+test,0.85,0.8421052631578947
+,auc,accuracy
+valid,0.5,0.6666666666666666
